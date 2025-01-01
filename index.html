@@ -34,6 +34,15 @@
             font-size: 1.5rem;
             color: #666;
         }
+        header .icons {
+            margin-top: 1rem;
+        }
+        header .icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+        }
         .container {
             width: 80%;
             margin: 2rem auto;
@@ -48,11 +57,23 @@
             border-bottom: 2px solid #ddd;
             padding-bottom: 0.5rem;
         }
-        a {
+        .publication {
+            margin-bottom: 1.5rem;
+        }
+        .publication strong {
+            display: block;
+            font-size: 1.1rem;
+        }
+        .publication em {
+            display: block;
+            font-style: normal;
+            color: #555;
+        }
+        .publication a {
             color: #0066cc;
             text-decoration: none;
         }
-        a:hover {
+        .publication a:hover {
             text-decoration: underline;
         }
         footer {
@@ -66,31 +87,40 @@
 </head>
 <body>
     <header>
-        <img src="IMG_0289.jpg" alt="Profile Picture">
+        <img src="IMG_0289_cropped.jpg" alt="Profile Picture">
         <h1>Asim Biswal</h1>
         <h2>Second Year Ph.D. Student, UC Berkeley</h2>
         <p>Advised by <a href="https://people.eecs.berkeley.edu/~jegonzal/">Prof. Joseph Gonzalez</a></p>
+        <div class="icons">
+            <a href="https://github.com/abiswal2001" target="_blank">&#xf09b; GitHub</a>
+            <a href="https://www.linkedin.com/in/asim-biswal/" target="_blank">&#xf0e1; LinkedIn</a>
+            <a href="" target="_blank">&#xf15c; CV</a>
+        </div>
     </header>
 
     <div class="container">
         <section>
-            <h3>About Me</h3>
-            <p>
-                I am a second year Ph.D. student advised by Prof. Joseph Gonzalez. My current research interest is studying the intersection of large language models and databases. Specifically, I am interested in leveraging the full potential of structured and unstructured data and their patterns of interactions using language models. This includes working on problems such as Text2SQL as well as the new paradigm TAG (Table Augmented Generation).
-            </p>
-            <p>
-                I previously graduated from the University of California, Berkeley with a B.S. degree in Electrical Engineering and Computer Science. During this time, I worked in the Sky Computing Lab on problems such as fair resource allocation and wide-area networking. 
-            </p>
-        </section>
-
-        <section>
             <h3>Publications</h3>
-            <ul>
-                <li><a href="https://arxiv.org/abs/2408.14717">Text2SQL is Not Enough: Unifying AI and Databases with TAG</a> (CIDR 2025)</li>
-                <li><a href="https://arxiv.org/abs/2403.05821">Optimizing LLM Queries in Relational Workloads</a> (Preprint)</li>
-                <li><a href="https://www.usenix.org/system/files/osdi23-bhardwaj.pdf">Cilantro: Performance Aware Resource Allocation for General Objectives via Online Feedback</a></li>
-                <li><a href="https://arxiv.org/abs/2210.07259">Skyplane: Optimizing Transfer Cost and Throughput Using Cloud-Aware Overlays</a> (NSDI 2023)</li>
-            </ul>
+            <div class="publication">
+                <strong>Text2SQL is Not Enough: Unifying AI and Databases with TAG</strong><em>2025, CIDR</em>
+                <em>Asim Biswal<sup>*</sup>, Liana Patel<sup>*</sup>, Siddarth Jha, Amog Kamsetty, Shu Liu, Joseph E. Gonzalez, Carlos Guestrin, Matei Zaharia</em>
+                <a href="https://arxiv.org/abs/2408.14717">arxiv.org/abs/2408.14717</a>
+            </div>
+            <div class="publication">
+                <strong>Optimizing LLM Queries in Relational Workloads</strong><em>2024, Preprint</em>
+                <em>Shu Liu<sup>*</sup>, Asim Biswal<sup>*</sup>, Audrey Cheng<sup>*</sup>, Xiangxi Mo, Shiyi Cao, Joseph E. Gonzalez, Ion Stoica, Matei Zaharia</em>
+                <a href="https://arxiv.org/abs/2403.05821">arxiv.org/abs/2403.05821</a>
+            </div>
+            <div class="publication">
+                <strong>Cilantro: Performance Aware Resource Allocation for General Objectives via Online Feedback</strong><em>2023, OSDI</em>
+                <em>Romil Bhardwaj, Kirthevasan Kandasamy, Asim Biswal, Wenshuo Guo, Benjamin Hindman, Joseph Gonzalez, Michael Jordan, Ion Stoica</em>
+                <a href="https://www.usenix.org/system/files/osdi23-bhardwaj.pdf">usenix.org/system/files/osdi23-bhardwaj.pdf</a>
+            </div>
+            <div class="publication">
+                <strong>Skyplane: Optimizing Transfer Cost and Throughput Using Cloud-Aware Overlays</strong><em>2023, NSDI</em>
+                <em>Paras Jain, Sam Kumar, Sarah Wooders, Shishir G. Patil, Joseph E. Gonzalez, Ion Stoica </em>
+                <a href="https://arxiv.org/abs/2210.07259">arxiv.org/abs/2210.07259</a>
+            </div>
         </section>
     </div>
 
