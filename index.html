@@ -21,26 +21,29 @@
         }
         header img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
         }
         header h1 {
             margin: 1rem 0 0.5rem;
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #006400;
         }
         header h2 {
             margin: 0.5rem 0;
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: #666;
         }
         header div {
             margin-top: 0.5rem;
         }
-        header div span {
+        header div span.accent {
             color: #006400;
             font-weight: bold;
+        }
+        header div span {
+            color: inherit;
         }
         header .icons {
             margin-top: 1rem;
@@ -96,10 +99,10 @@
 </head>
 <body>
     <header>
-        <img src="IMG_0289_cropped.JPG" alt="Profile Picture">
+        <img src="IMG_0289.jpg" alt="Profile Picture">
         <h1><span>Asim Biswal</span></h1>
         <h2>CS PhD, University of California, Berkeley</h2>
-        <div><span>abiswal</span>[at]<span>berkeley</span>[dot]<span>edu</span></div>
+        <div><span>abiswal</span><span class="accent">[at]</span><span>berkeley</span><span class="accent">[dot]</span><span>edu</span></div>
         <div class="icons">
             <a href="https://github.com/abiswal2001" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/asim-biswal/" target="_blank"><i class="fab fa-linkedin"></i></a>
